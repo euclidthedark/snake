@@ -1,9 +1,9 @@
 default: build
 
 build:
-	gcc main.c -o main -lncurses
+	gcc main.c -lncurses -o main
 
-run:
+run: build
 	./main
 
 install_ncurses_ubuntu:
