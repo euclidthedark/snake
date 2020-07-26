@@ -1,10 +1,12 @@
-default: build
+default: run
 
 build:
-	gcc main.c -lncurses -o main
+	mkdir bin
+	gcc ./src/main.c -P -o ./bin/snake -lncurses
 
 run: build
-	./main
+	./bin/snake
+	rm -rf bin
 
 install_ncurses_ubuntu:
 	sudo apt update && \
