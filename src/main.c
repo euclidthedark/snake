@@ -3,7 +3,12 @@
 
 int main()
 {
-  Board game_board = {200, 55, 2, 10};
+  Board game_board = {
+    200,
+    55,
+    2,
+    10
+  };
 
   initscr();
   curs_set(0);
@@ -15,6 +20,8 @@ int main()
   );
   refresh();
   box(win, 0, 0);
+  mvwaddch(win, game_board.y_offset + 5, game_board.x_offset + 5, 'X');
+  mvwaddch(win, game_board.y_offset + 5, game_board.x_offset + 4, '=');
   wrefresh(win);
   getch();
   endwin();
