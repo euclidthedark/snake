@@ -1,8 +1,5 @@
-struct Board {
-  int width;
-  int height;
-  int y_offset;
-  int x_offset;
-};
+#define BOARD_WIDTH 200
+#define BOARD_HEIGHT 55
+#define Y_OFFSET 2
+#define X_OFFSET 10
 
-typedef struct Board Board;

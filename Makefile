@@ -1,8 +1,9 @@
 default: run
 
 build:
+	rm -rf bin
 	mkdir bin
-	gcc ./src/main.c -P -o ./bin/snake -lncurses
+	gcc ./src/main.c -o ./bin/snake -lncurses
 
 run: build
 	./bin/snake
