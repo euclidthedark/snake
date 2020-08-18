@@ -5,7 +5,7 @@
 
 int main()
 {
-  Ordered_Pair new_food = return_food();
+  ordered_pair new_food = return_food();
   printf("The food is at %d, %d.\n", new_food.x, new_food.y);
   initscr();
   curs_set(0);
